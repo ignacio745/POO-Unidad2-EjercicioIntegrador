@@ -15,8 +15,10 @@ class Menu:
             func(unManejadorCamas, unManejadorMedicamentos)
         elif op=='2':
             func(unManejadorCamas)
-        else:
+        elif op=='3':
             func(unManejadorCamas)
+        else:
+            func()
     def salir(self, unManejadorCamas):
         if isinstance(unManejadorCamas, ManejadorCamas):
             unManejadorCamas.guardarCSV("camasActualizada.csv")
